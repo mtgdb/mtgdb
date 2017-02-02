@@ -1,0 +1,26 @@
+version: '2'
+services:
+  web:
+    image: mtgdb2:v1
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - .:/app
+    ports:
+      - 3000:3000
+    command: bin/start
+    depends_on:
+      - db
+      - mailcatcher
+  db:
+    image: postgres:9.6
+    ports:
+      - 5432:5432
+    environment:
+      POSTGRES_DB: mtgdb_development
+  mailcatcher:
+    image: nicklinnell/mailcatcher
+    ports:
+      - 1080:1080
+      - 1025:1025
