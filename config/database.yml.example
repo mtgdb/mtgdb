@@ -1,0 +1,12 @@
+base: &base
+  encoding: utf8
+  adapter: postgresql
+  pool: 5
+  username: postgres
+  host: db
+development:
+  database: mtgdb_development
+  <<: *base
+test:
+  database: mtgdb_development
+  <<: *base
