@@ -1,0 +1,29 @@
+language: ruby
+
+rvm:
+  - 2.4.0
+
+cache: bundler
+
+before_install:
+  - export TZ=Europe/London
+  - echo -e "machine github.com\n  login $CI_USER_TOKEN" >> ~/.netrc
+  - chmod 600 ~/.netrc
+
+before_script:
+  - rm ~/.netrc
+  - cp config/database.travis.yml config/database.yml
+  - RAILS_ENV=test bundle exec rake db:create
+  - RAILS_ENV=test bundle exec rake db:schema:load
+
+env:
+  global:
+    - DEFAULT_FROM_EMAIL_ADDRESS='website@mtgdb.online'
+
+addons:
+  postgresql: '9.4'
+  code_climate:
+    repo_token: 040e9fcf209ef8cd1d3dd7784d7c94f2766f3c33306de6159e8e913c955ffd12
+
+script:
+  - bin/test spec
