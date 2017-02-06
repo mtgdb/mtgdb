@@ -27,4 +27,4 @@ addons:
 
 script:
   - bundle exec rspec
-  - CODECLIMATE_REPO_TOKEN=#{ENV['CODECLIMATE_REPO_TOKEN']} codeclimate-test-reporter
+  - CODECLIMATE_REPO_TOKEN=#{ENV['CODECLIMATE_REPO_TOKEN']} bundle exec codeclimate-test-reporter
