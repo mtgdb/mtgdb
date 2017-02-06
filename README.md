@@ -1,4 +1,4 @@
-[![Code Climate](https://codeclimate.com/github/steview/mtgdb2/badges/gpa.svg)](https://codeclimate.com/github/steview/mtgdb2) [![Test Coverage](https://codeclimate.com/github/steview/mtgdb2/badges/coverage.svg)](https://codeclimate.com/github/steview/mtgdb2/coverage) [![Issue Count](https://codeclimate.com/github/steview/mtgdb2/badges/issue_count.svg)](https://codeclimate.com/github/steview/mtgdb2)
+[![Build Status](https://travis-ci.org/steview/mtgdb2.svg?branch=master)](https://travis-ci.org/steview/mtgdb2) [![Code Climate](https://codeclimate.com/github/steview/mtgdb2/badges/gpa.svg)](https://codeclimate.com/github/steview/mtgdb2) [![Test Coverage](https://codeclimate.com/github/steview/mtgdb2/badges/coverage.svg)](https://codeclimate.com/github/steview/mtgdb2/coverage) [![Issue Count](https://codeclimate.com/github/steview/mtgdb2/badges/issue_count.svg)](https://codeclimate.com/github/steview/mtgdb2)
 
 # README
 
