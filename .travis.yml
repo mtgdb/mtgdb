@@ -26,4 +26,5 @@ addons:
     repo_token: 040e9fcf209ef8cd1d3dd7784d7c94f2766f3c33306de6159e8e913c955ffd12
 
 script:
-  - bin/test spec
+  - bundle exec rspec
+  - CODECLIMATE_REPO_TOKEN=#{ENV['CODECLIMATE_REPO_TOKEN']} codeclimate-test-reporter
