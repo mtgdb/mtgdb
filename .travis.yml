@@ -22,9 +22,7 @@ env:
 
 addons:
   postgresql: '9.4'
-  code_climate:
-    repo_token: 040e9fcf209ef8cd1d3dd7784d7c94f2766f3c33306de6159e8e913c955ffd12
 
 script:
   - bundle exec rspec spec
-  - CODECLIMATE_REPO_TOKEN=#{ENV['CODECLIMATE_REPO_TOKEN']} bundle exec codeclimate-test-reporter
+  - bundle exec codeclimate-test-reporter
