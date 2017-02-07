@@ -15,17 +15,10 @@ gem 'jquery-rails'
 gem 'turbolinks', '~> 5'
 gem 'devise'
 
-group :development, :test do
-  gem 'byebug', platform: :mri
-end
-
 group :test do
+  gem 'byebug', platform: :mri
   gem 'simplecov'
   gem 'codeclimate-test-reporter', '~> 1.0.0'
-end
-
-group :development do
-  gem 'web-console', '>= 3.3.0'
   gem 'listen', '~> 3.0.5'
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
@@ -36,6 +29,10 @@ group :development do
   gem 'factory_girl_rails'
   gem 'shoulda-matchers'
   gem 'codeclimate-test-reporter', '~> 1.0.0'
+end
+
+group :development do
+  gem 'web-console', '>= 3.3.0'
 end
 
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]

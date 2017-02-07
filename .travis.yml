@@ -22,8 +22,6 @@ env:
 
 addons:
   postgresql: '9.4'
-  code_climate:
-    repo_token: 040e9fcf209ef8cd1d3dd7784d7c94f2766f3c33306de6159e8e913c955ffd12
 
 script:
-  - bin/test spec
+  - bin/test
