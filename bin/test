@@ -9,7 +9,7 @@ require 'dotenv'
 Dotenv.load
 
 puts "\n== Running specs =="
-system 'bin/rspec spec'
+system 'rspec spec'
 
 puts "\n== Sending coverage to Codeclimate =="
 system 'codeclimate-test-reporter'
