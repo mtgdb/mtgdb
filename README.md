@@ -34,7 +34,7 @@ You can start the app using Docker with:
 $ docker-compose up
 ```
 
-The site should be available at: `http://localhost:5000`
+The site should be available at: `http://localhost:3000`
 
 ## Testing
 
