@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/steview/mtgdb2.svg?branch=master)](https://travis-ci.org/steview/mtgdb2) [![Code Climate](https://codeclimate.com/github/steview/mtgdb2/badges/gpa.svg)](https://codeclimate.com/github/steview/mtgdb2) [![Test Coverage](https://codeclimate.com/github/steview/mtgdb2/badges/coverage.svg)](https://codeclimate.com/github/steview/mtgdb2/coverage) [![Issue Count](https://codeclimate.com/github/steview/mtgdb2/badges/issue_count.svg)](https://codeclimate.com/github/steview/mtgdb2)
+[![Build Status](https://api.travis-ci.org/mtgdb/mtgdb.svg?branch=master)](https://travis-ci.org/mtgdb/mtgdb) [![Code Climate](https://codeclimate.com/github/mtgdb/mtgdb/badges/gpa.svg)](https://codeclimate.com/github/mtgdb/mtgdb) [![Test Coverage](https://codeclimate.com/github/mtgdb/mtgdb/badges/coverage.svg)](https://codeclimate.com/github/mtgdb/mtgdb/coverage) [![Issue Count](https://codeclimate.com/github/mtgdb/mtgdb/badges/issue_count.svg)](https://codeclimate.com/github/mtgdb/mtgdb)
 
 # MTGDB
 
@@ -34,7 +34,7 @@ You can start the app using Docker with:
 $ docker-compose up
 ```
 
-The site should be available at: `http://localhost:5000`
+The site should be available at: `http://localhost:3000`
 
 ## Testing
 
