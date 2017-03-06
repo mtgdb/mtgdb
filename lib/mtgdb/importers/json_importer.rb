@@ -1,4 +1,4 @@
-class MtgJsonImporter
+class MTGDB::Importers::JSONImporter
   def self.run(data)
     magic_set = MagicSet.where(code: data['code']).first_or_initialize.tap do |set|
       set.name = data['name']
