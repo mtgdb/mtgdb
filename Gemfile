@@ -15,6 +15,7 @@ gem 'jquery-rails'
 gem 'turbolinks', '~> 5'
 gem 'devise'
 gem 'friendly_id', '~> 5.1.0'
+gem 'rubyzip', '~> 1.2'
 
 group :test do
   gem 'byebug', platform: :mri
